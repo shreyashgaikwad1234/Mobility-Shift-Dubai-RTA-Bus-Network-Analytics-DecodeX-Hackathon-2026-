@@ -37,47 +37,47 @@ Stage 1: Baseline Diagnosis :
 
 Stage 2: Structural Break Detection : 
 
-1. Identified regime change after Metro launch
-2. Express routes: +29.8% surge
-3. Feeder routes: −23.5% drop
+ 1. Identified regime change after Metro launch
+ 2. Express routes: +29.8% surge
+ 3. Feeder routes: −23.5% drop
    
 Classified shifts:
-1. Level shift
-2. Volatility shift
-3. Elasticity shift
+ 1. Level shift
+ 2. Volatility shift
+ 3. Elasticity shift
    
 Rebuilt forecasting model using:
 Q4 Forecast = Q3 Actual × Seasonal Index
 
 Stage 3: Model Validation
-1. Out-of-time validation (Q4 2025)
-2. Route Type	MAPE	Insight
-3. Express	1.1%	Highly accurate
-4. City	14%	Underestimated seasonality
-5. Feeder	9.3%	Partial recovery
-6. Intercity	12.3%	Seasonal uplift
+ 1. Out-of-time validation (Q4 2025)
+ 2. Route Type	MAPE	Insight
+ 3. Express	1.1%	Highly accurate
+ 4. City	14%	Underestimated seasonality
+ 5. Feeder	9.3%	Partial recovery
+ 6. Intercity	12.3%	Seasonal uplift
 
 Network Accuracy: 9.33% MAPE
 
 Key Features / Techniques: 
-1. Time-series analysis
-2. Structural break detection
-3. Forecast recalibration
-4. Sensitivity analysis
-5. Load ratio optimization
-6. Congestion elasticity modeling
+ 1. Time-series analysis
+ 2. Structural break detection
+ 3. Forecast recalibration
+ 4. Sensitivity analysis
+ 5. Load ratio optimization
+ 6. Congestion elasticity modeling
 Tech Stack : 
-1. Python (pandas, numpy)
-2. Plotly (visualization)
-3. Power BI (interactive dashboard)
-4. Excel (forecast modeling)
+ 1. Python (pandas, numpy)
+ 2. Plotly (visualization)
+ 3. Power BI (interactive dashboard)
+ 4. Excel (forecast modeling)
 Key Insights : 
-1. Metro created a permanent regime shift
-2. Express routes became last-mile connectors
-3. Feeder routes lost CBD relevance
-4. Fleet can be optimized without new buses
+ 1. Metro created a permanent regime shift
+ 2. Express routes became last-mile connectors
+ 3. Feeder routes lost CBD relevance
+ 4. Fleet can be optimized without new buses
 Business Impact
-1. Reduced overload risk in Express routes
-2. Reallocated 4–6 buses efficiently
-3. Improved service without increasing cost
-4. Created a scalable forecasting framework
+ 1. Reduced overload risk in Express routes
+ 2. Reallocated 4–6 buses efficiently
+ 3. Improved service without increasing cost
+ 4. Created a scalable forecasting framework
