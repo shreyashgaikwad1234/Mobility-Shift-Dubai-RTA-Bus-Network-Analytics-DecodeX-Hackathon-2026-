@@ -1,4 +1,4 @@
-<img width="1301" height="722" alt="image" src="https://github.com/user-attachments/assets/02806862-d6ad-4f07-885e-9017866b9f38" /># Business Case Study Challenge : Mobility-Shift-Dubai-RTA-Bus-Network-Analytics-DecodeX-Hackathon-2026-
+# Business Case Study Challenge : Mobility-Shift-Dubai-RTA-Bus-Network-Analytics-DecodeX-Hackathon-2026-
 Python-based transport analytics project using 200K+ ridership records to detect structural demand shifts, forecast ridership, and propose cost-neutral fleet optimization for Dubai’s RTA bus network.
 Overview
 
