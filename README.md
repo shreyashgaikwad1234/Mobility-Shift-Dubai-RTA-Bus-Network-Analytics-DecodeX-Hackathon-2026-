@@ -2,82 +2,80 @@
 Python-based transport analytics project using 200K+ ridership records to detect structural demand shifts, forecast ridership, and propose cost-neutral fleet optimization for Dubai’s RTA bus network.
 Overview
 
-This project analyzes 209K+ ridership records from Dubai’s RTA bus network to:
+1. Overview :-
 
-1. Detect structural demand shifts
-2. Forecast post-Metro ridership
-3. Propose cost-neutral fleet optimization
+This project analyzes over 200,000 ridership records from Dubai’s RTA bus network to detect structural demand shifts, forecast post-Metro ridership, and optimize fleet allocation under a cost-neutral constraint.
+The analysis is built around the impact of Metro Phase 2 (launched July 2025), which disrupted historical demand patterns and invalidated existing forecasting models.
 
-Built as part of the DecodeX 2026 Hackathon, this project solves a real-world transportation planning problem triggered by Metro Phase 2 launch (July 2025).
+2. Business Problem :-
 
-Business Problem :
+Dubai RTA faced multiple operational challenges:-
 
-Dubai RTA faced a critical disruption:
+Rapid demand growth of approximately 36% between 2022 and 2025
+   Structural disruption due to Metro Phase 2 launch
+   Lack of reliable forecasting for peak demand periods
+   Imbalance between overloaded and underutilized routes
+   Need for optimization without increasing fleet size
 
-1. 36% growth in ridership (2022–2025)
-2. Metro Phase 2 launched → broke all previous demand patterns
-3. No reliable forecast for peak season (Nov–Dec 2025)
+Key objective:-
+To redesign forecasting and fleet allocation strategy under a post-Metro demand regime.
 
-Key questions:
+3. Solution Approach :-
+3.1 Stage 1: Baseline Diagnosis
+   Computed CAGR across routes (~11% uniform growth)
+   Identified seasonal demand patterns (January peak, July trough)
+   Performed corridor analysis (CBD contributes ~29% demand)
+   Measured congestion-demand elasticity (positive correlation)
+   Built baseline forecast using historical growth and seasonality
+3.2 Stage 2: Structural Break Detection
+   Compared Q3 2025 actuals with Stage 1 forecasts
+   Identified demand shifts:
+     Express routes increased by 29.8%
+     Feeder routes declined by 23.5%
+Classified structural changes into:
+   Level shift
+   Volatility shift
+   Elasticity shift
+   Determined regime change vs temporary shock
+   Rebuilt forecasting model using Q3 data as new base
 
-1. Which routes are overloaded vs underutilized?
-2. Is the demand shift temporary or permanent?
-3. How to optimize fleet WITHOUT adding buses?
-
-Solution Approach
-
-The project is structured in 3 analytical stages:
-
-Stage 1: Baseline Diagnosis : 
-
-1. CAGR analysis (~11% uniform growth)
-2. Seasonal demand modeling (Jan peak, Jul trough)
-3. Corridor analysis (CBD = 29% demand)
-4. Congestion-demand elasticity (+0.137 correlation)
-
-Stage 2: Structural Break Detection : 
-
- 1. Identified regime change after Metro launch
- 2. Express routes: +29.8% surge
- 3. Feeder routes: −23.5% drop
-   
-Classified shifts:
- 1. Level shift
- 2. Volatility shift
- 3. Elasticity shift
-   
-Rebuilt forecasting model using:
+Forecast model used:
 Q4 Forecast = Q3 Actual × Seasonal Index
 
-Stage 3: Model Validation
- 1. Out-of-time validation (Q4 2025)
- 2. Route Type	MAPE	Insight
- 3. Express	1.1%	Highly accurate
- 4. City	14%	Underestimated seasonality
- 5. Feeder	9.3%	Partial recovery
- 6. Intercity	12.3%	Seasonal uplift
+3.3 Stage 3: Model Validation
+   Performed out-of-time validation using Q4 2025 data
+   Evaluated accuracy using MAPE
 
-Network Accuracy: 9.33% MAPE
+Results:
 
-Key Features / Techniques: 
- 1. Time-series analysis
- 2. Structural break detection
- 3. Forecast recalibration
- 4. Sensitivity analysis
- 5. Load ratio optimization
- 6. Congestion elasticity modeling
-Tech Stack : 
- 1. Python (pandas, numpy)
- 2. Plotly (visualization)
- 3. Power BI (interactive dashboard)
- 4. Excel (forecast modeling)
-Key Insights : 
- 1. Metro created a permanent regime shift
- 2. Express routes became last-mile connectors
- 3. Feeder routes lost CBD relevance
- 4. Fleet can be optimized without new buses
-Business Impact
- 1. Reduced overload risk in Express routes
- 2. Reallocated 4–6 buses efficiently
- 3. Improved service without increasing cost
- 4. Created a scalable forecasting framework
+Express routes: 1.1% (high accuracy)
+City routes: 14.0% (underestimated seasonality)
+Feeder routes: 9.3% (partial recovery)
+Intercity routes: 12.3% (seasonal uplift)
+
+Overall network accuracy: 9.33% MAPE
+
+4. Key Features and Techniques :-
+   Time-series analysis
+   Structural break detection
+   Forecast recalibration
+   Sensitivity analysis
+   Load ratio optimization
+Congestion elasticity modeling
+5. Tech Stack :- 
+   Python (pandas, numpy)
+   Plotly for visualization
+   Power BI for dashboard development
+   Excel for forecasting and sensitivity modeling
+6. Key Insights :- 
+   Metro Phase 2 caused a permanent regime shift in demand
+   Express routes became primary last-mile connectors
+   Feeder routes lost relevance in CBD corridors
+   Demand patterns diverged significantly across route types
+   Historical models are no longer valid for all segments
+7. Business Impact :-
+   Identified overload risk in high-demand routes
+   Enabled reallocation of 4–6 buses across the network
+   Achieved cost-neutral optimization without new procurement
+   Improved service efficiency in peak demand periods
+   Developed a scalable forecasting framework for future use
